@@ -7,7 +7,7 @@
 </head>
 <style>
     body {
-        font-family: "Arial","Helvetica","sans-serif";
+        font-family: "Arial", "Helvetica", "sans-serif";
     }
 
     h1 {
@@ -18,62 +18,112 @@
         margin: 0;
     }
 
-    #menu ul li {
-        background-color: cadetblue;
     }
 
-    #menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    #menu ul a {
-        display: block;
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 15px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-family: "Arial","Helvetica","sans-serif";
-    }
-
-    #menu ul li {
-        position: relative;
-        float: left;
-        margin: 0;
-        padding: 0;
-    }
-
-    #menu ul li:hover {
-        background: lightblue;
-    }
-
-    #menu ul ul {
-        display: none;
+    input#abrir-cerrar {
+        visibility: hidden;
         position: absolute;
-        top: 100%;
+        top: -9999px;
+    }
+
+
+    label[for="abrir-cerrar"] {
+        cursor: pointer;
+        padding: 1rem;
+        background-color: #333;
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    .cerrar {
+        display: none;
+    }
+
+    #sidebar {
+        width: 0;
+    }
+
+    #contenido {
+        margin-left: 0;
+    }
+
+    input#abrir-cerrar:checked~#sidebar {
+        width: 300px;
+    }
+
+    input#abrir-cerrar:checked+label[for="abrir-cerrar"],
+    input#abrir-cerrar:checked~#contenido {
+        margin-left: 300px;
+        transition: margin-left .4s;
+    }
+
+
+    input#abrir-cerrar:checked+label[for="abrir-cerrar"] .cerrar {
+        display: inline;
+    }
+
+    input#abrir-cerrar:checked+label[for="abrir-cerrar"] .abrir {
+        display: none;
+    }
+
+    .sidebar {
+        position: fixed;
+        height: 100%;
+        width: 0;
+        top: 0;
         left: 0;
-        padding: 0;
+        z-index: 1;
+        background-color: #00324b;
+        overflow-x: hidden;
+        transition: 0.4s;
+        padding: 1rem 0;
+        box-sizing: border-box;
     }
 
-    #menu ul ul li {
-        float: none;
-        width: 100%
-    }
-
-    #menu ul ul a {
-        line-height: 120%;
-        padding: 10px 15px;
-    }
-
-    #menu ul li:hover>ul {
+    .sidebar .boton-cerrar {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        font-size: 2rem;
         display: block;
+        padding: 0;
+        line-height: 1.5rem;
+        margin: 0;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        vertical-align: top;
     }
 
+    .sidebar ul,
+    .sidebar li {
+        margin: 0;
+        padding: 0;
+        list-style: none inside;
+    }
+
+    .sidebar ul {
+        margin: 4rem auto;
+        display: block;
+        width: 80%;
+        min-width: 200px;
+    }
+
+    .sidebar a {
+        display: block;
+        font-size: 120%;
+        color: #eee;
+        text-decoration: none;
+
+    }
+
+    .sidebar a:hover {
+        color: #fff;
+        background-color: #f90;
+
+    }
 
     footer {
         background-color: blanchedalmond;
@@ -82,45 +132,57 @@
         bottom: 0px;
         width: 100%;
     }
-
 </style>
 
 <body>
     <h1>Índice de trabajos de Braulio Jiménez García</h1>
-    <nav id="menu">
-        <ul class="nav">
-            <li><a href="#">XML</a>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">&#9776; <span class="abrir">Abrir</span><span class="cerrar">Cerrar</span></label>
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="XML">XML</a>
                 <ul>
-                    <li></li>
+                    <li><a href="#"></a></li>
                 </ul>
             </li>
-            <li><a href="">HTML & CSS</a>
+            <li><a href="#">HTML</a>
                 <ul>
                     <li><a href="Ejercicio Horario_BJG/Ejercicio Horario_BJG.html">Ejercicio Horario</a></li>
                     <li><a href="Ejercicio tortillapapas/tortillapapas.html">Ejercicio Tortilla de Patatas</a></li>
                     <li><a href="Ejercicio página viajes/Página de viajes.html">Ejercicio Página Viajes</a></li>
-                    <li><a href="Ejercicio página viajes 2/Página de viajes 2.html">Ejercicio Página de Viajes acabada</a></li>
+                    <li><a href="Ejercicio página viajes/Página de viajes.html">Ejercicio Página Viajes</a></li>    
                 </ul>
             </li>
-            <li><a href="">XML Schema</a>
+            <li><a href="#">RSS</a>
                 <ul>
-                    <li><a href="">Nota</a>
-                        <ul><a href="XML Schema/nota.xml">nota.xml</a></ul>
-                        <ul><a href="XML Schema/note.xsd">note.xsd</a></ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>    
+                </ul>
+            </li>
+            <li><a href="#">XML Schema</a>
+                <ul>
+                    <li><a href="#">Ejercicio Nota</a>
+                        <ul>
+                            <li><a href="XML Schema/nota.xml">nota.xml</a></li>
+                            <li><a href="XML Schema/note.xsd">note.xsd</a></li>
+                        </ul>
                     </li>
-                    <li><a href="">XSD Beti</a>
-                        <ul><a href="XML Schema/erBeti.xml">ErBeti.xml</a></ul>
-                        <ul><a href="XML Schema/XSD Beti.xsd">ErBeti.xml</a></ul>
+                    <li><a href="#">Ejercicio XSD Fútbol</a>
+                        <ul>
+                            <li><a href="XML Schema/erBeti.xml">erBeti.xml</a></li>
+                            <li><a href="XML Schema/XSD Beti.xsd">XSD Beti.xsd</a></li>
+                        </ul>
                     </li>
                 </ul>
             </li>
-
         </ul>
-    </nav>
+    </div>
 </body>
 <br><br>
 <br><br><br><br>
-<footer>Braulio Jiménez García - 2021&nbsp;&nbsp;&nbsp;&nbsp;<a
+<footer>&nbsp;&nbsp;Braulio Jiménez García - 2021&nbsp;&nbsp;&nbsp;&nbsp;<a
         href="https://brauliojg.github.io/LLMM_ASIR1/mi_rss.xml"><img src="img/outline_rss_feed_black_24dp.png"
             height="30em" style="vertical-align: middle;"></a>&nbsp;&nbsp;<a
         href="https://brauliojg.github.io/LLMM_ASIR1/mi_rss_con_editor.xml"><img src="img/rsschapuzas.png" height="30em"
