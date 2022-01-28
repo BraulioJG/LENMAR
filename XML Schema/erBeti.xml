@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<futbol>
+    <equipos>
+        <equipo>
+            <nombre>Real Betis Balompié</nombre>
+            <copas>0</copas>
+            <jugadores>
+                <pichichi>
+                    <nombre_pichichi>Joaquín</nombre_pichichi>
+                    <fechaNacimiento>1980-10-10</fechaNacimiento>
+                    <goles>100</goles>
+                    <tarjetas>
+                        <amarillas>1</amarillas>
+                        <rojas>0</rojas>
+                    </tarjetas>
+                </pichichi>
+            </jugadores>
+            <equipacion>
+                <primera>blanco y verde</primera>
+                <segunda>azul y blanca</segunda>
+            </equipacion>
+            <partidos>
+                <jugados>
+                    <ganados>100</ganados>
+                    <perdidos>10</perdidos>
+                    <empatados>50</empatados>
+                </jugados>
+                <estadio>
+                    <capacidad>60000</capacidad>
+                    <nombre_estadio>Benito Villamarín</nombre_estadio>
+                </estadio>
+            </partidos>
+        </equipo>
+    </equipos>
+</futbol>

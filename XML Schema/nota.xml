@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<note xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="note.xsd">
+
+    <to>Braulio</to>
+    <from>Adrián</from>
+    <heading>Pues... no sé</heading>
+    <body>Haber estudiao</body>
+    <despedida>Me voy a Andorra la bella, bye</despedida>
+
+</note>

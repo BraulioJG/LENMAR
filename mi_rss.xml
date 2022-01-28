@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0">
+    <channel>
+        <title>Canal RSS de Braulio Jiménez</title>
+        <link>https://brauliojg.github.io/LLMM_ASIR1/</link>
+        <description>Índice de ejercicios</description>
+        <item>
+          <title>Mi primera noticia</title>
+          <link>www.mitiempo.es</link>
+          <description>Información del tiempo</description>
+        </item>
+        <item>
+          <title>Mi segunda noticia</title>
+          <link>www.embargosalobestia.com</link>
+          <description>Información de embargos bestiales</description>
+        </item>
+        <item>
+          <title>Mi tercera noticia</title>
+          <link>http://barbateatunychocolate.blogspot.com/</link>
+          <description>Sabores raros porque sí</description>
+        </item>
+        <item>
+          <title>Xataka: "Las nuevas imágenes de 'Avatar 2' son un resumen perfecto de todo lo que arriesga James Cameron en sus tres secuelas."</title>
+          <link>https://www.xataka.com/cine-y-tv/nuevas-imagenes-avatar-2-resumen-perfecto-todo-que-arriesga-james-cameron-sus-tres-secuelas</link>
+          <description>Si una película ha demostrado el potencial de los gráficos por ordenador, esa es Avatar, una película que sin duda ha marcado un antes y un después en la industria del cine. En un reportaje exclusivo para Entertainment Weekly, James Cameron ha mostrado algunas imágenes inéditas del primer Avatar y ha declarado que compagina en el nuevo Avatar 2 sus dos pasiones, el mundo acuático y el cine. Está por ver si el enorme presupuesto de 250 millones de dólares, permite ganar dinero con la esperada película, que se estrenará en diciembre de 2022.</description>
+        </item>
+    </channel>
+  </rss>

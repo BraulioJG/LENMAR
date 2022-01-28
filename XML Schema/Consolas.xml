@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla>Consolas</tabla>
+    <plataforma>
+        <f1>PlayStation</f1>
+        <f2>PlayStation</f2>
+        <f3>XBOX</f3>
+        <f4>XBOX</f4>
+        <f5>Nintendo</f5>
+        <f6>PC</f6>
+    </plataforma>
+    <version>
+        <f1>4</f1>
+        <f2>5</f2>
+        <f3>One</f3>
+        <f4>Series X/S</f4>
+        <f5>Switch</f5>
+        <f6>-</f6>
+    </version>
+    <juegos>
+        <acción>
+            <f1>Call of Duty: WWII</f1>
+            <f2>Fortnite</f2>
+            <f3>-</f3>
+            <f4>-</f4>
+            <f5>-</f5>
+            <f6>-</f6>
+        </acción>
+        <rol>
+            <f1>-</f1>
+            <f2>-</f2>
+            <f3>Dark Souls III</f3>
+            <f4>Cyberpunk 2077</f4>
+            <f5>-</f5>
+            <f6>Deltarune</f6>
+        </rol>
+        <arcade>
+            <f1>-</f1>
+            <f2>-</f2>
+            <f3>-</f3>
+            <f4>-</f4>
+            <f5>Capcom Arcade Stadium</f5>
+            <f6>-</f6>
+        </arcade>
+    </juegos>
+    <fechalanzamiento>
+        <f1>03/11/2017</f1>
+        <f2>21/07/2017</f2>
+        <f3>24/03/2016</f3>
+        <f4>17/09/2020</f4>
+        <f5>17/02/2021</f5>
+        <f6>31/10/2018</f6>
+    </fechalanzamiento>
+    <exito>
+        <ventas>
+            <num>
+                <f1>más de 10 millones</f1>
+                <f2>más de 350 millones de cuentas</f2>
+                <f3>más de 17 millones</f3>
+                <f4>más de 10 millones</f4>
+                <f5>sin datos</f5>
+                <f6>sin datos</f6>
+            </num>
+            <mes>
+                <f1>enero</f1>
+                <f2>junio</f2>
+                <f3>diciembre</f3>
+                <f4>mayo</f4>
+                <f5>-</f5>
+                <f6>-</f6>
+            </mes>
+            <año>
+                <f1>2018</f1>
+                <f2>2021</f2>
+                <f3>2021</f3>
+                <f4>2020</f4>
+                <f5>-</f5>
+                <f6>-</f6>
+            </año>
+        </ventas>
+    </exito>
+</tabla>
