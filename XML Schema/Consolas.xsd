@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tabla_consolas">
+        <xs:complexType>
+            <xs:element name="plataforma" type="xs:string">
+                <xs:complexType>
+                    <xs:element name="version" type="xs:string">
+                        <xs:complexType>
+                            <xs:element name="juegos">
+                                <xs:complexType>
+                                    <xs:element name="accion" type="xs:string">
+                                        <xs:complexType>
+                                            <xs:element name="fechalanzamiento" type="xs:date"></xs:element>
+                                            <xs:element name="exito">
+                                                <xs:complexType>
+                                                    <xs:element name="num" type="xs:integer"></xs:element>
+                                                    <xs:element name="mes" type="xs:string"></xs:element>
+                                                    <xs:element name="año" type="xs:integer"></xs:element>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:complexType>
+            </xs:element>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+                                        
