@@ -7,29 +7,29 @@
                     <fechalanzamiento>03/11/2017</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>más de 10 millones</num>
+                            <mes>enero</mes>
+                            <año>2018</año>
                         </ventas>
                     </exito>
                 </accion>
-                <rol>
-                    <fechalanzamiento></fechalanzamiento>
+                <rol>Final Fantasy VII Remake
+                    <fechalanzamiento>10/04/2020</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>más de 5 millones</num>
+                            <mes>agosto</mes>
+                            <año>2020</año>
                         </ventas>
                     </exito>
                 </rol>
-                <arcade>
-                    <fechalanzamiento></fechalanzamiento>
+                <arcade>Enter the Gungeon
+                    <fechalanzamiento>05/04/2016</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>más de 3 millones</num>
+                            <mes>enero</mes>
+                            <año>2020</año>
                         </ventas>
                     </exito>
                 </arcade>
@@ -38,32 +38,32 @@
         <version>5
             <juegos>
                  <accion>Fortnite
-                    <fechalanzamiento></fechalanzamiento>
+                    <fechalanzamiento>21/07/2017</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>más de 350 millones de cuentas</num>
+                            <mes>junio</mes>
+                            <año>2021</año>
                         </ventas>
                     </exito>
                 </accion>
-                <rol>
-                    <fechalanzamiento></fechalanzamiento>
+                <rol>Elden Ring
+                    <fechalanzamiento>25/02/2022</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>-</num>
+                            <mes>-</mes>
+                            <año>-</año>
                         </ventas>
                     </exito>
                 </rol>
-                <arcade>
-                    <fechalanzamiento></fechalanzamiento>
+                <arcade>Overcooked! All You Can Eat
+                    <fechalanzamiento>12/11/2020</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>sin datos</num>
+                            <mes>sin datos</mes>
+                            <año>sin datos</año>
                         </ventas>
                     </exito>
                 </arcade>
@@ -73,13 +73,13 @@
     <plataforma>XBOX
         <version>One
             <juegos>
-                <accion>
-                    <fechalanzamiento></fechalanzamiento>
+                <accion>Grand Theft Auto V
+                    <fechalanzamiento>17/09/2013</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>más de 150 millones</num>
+                            <mes>agosto</mes>
+                            <año>2021</año>
                         </ventas>
                     </exito>
                 </accion>
@@ -93,13 +93,13 @@
                         </ventas>
                     </exito>
                 </rol>
-                <arcade>
-                    <fechalanzamiento></fechalanzamiento>
+                <arcade>Street Fighter 30th Anniversary Collection
+                    <fechalanzamiento>29/05/2018</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>sin datos</num>
+                            <mes>sin datos</mes>
+                            <año>sin datos</año>
                         </ventas>
                     </exito>
                 </arcade>
@@ -107,13 +107,13 @@
         </version>
         <version>Series X/S
             <juegos>
-                 <accion>Fortnite
-                    <fechalanzamiento></fechalanzamiento>
+                 <accion>Gears of War 5
+                    <fechalanzamiento>10/11/2020</fechalanzamiento>
                     <exito>
                         <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <num>sin datos</num>
+                            <mes>sin datos</mes>
+                            <año>sin datos</año>
                         </ventas>
                     </exito>
                 </accion>
@@ -127,85 +127,13 @@
                         </ventas>
                     </exito>
                 </rol>
-                <arcade>
-                    <fechalanzamiento></fechalanzamiento>
-                    <exito>
-                        <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
-                        </ventas>
-                    </exito>
-                </arcade>
-            </juegos>
-        </version>
-    </plataforma>
-    <plataforma>Nintendo
-        <version>Switch
-            <juegos>
-                <accion>
-                    <fechalanzamiento></fechalanzamiento>
-                    <exito>
-                        <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
-                        </ventas>
-                    </exito>
-                </accion>
-                <rol>Capcom Arcade Stadium
-                    <fechalanzamiento>17/02/2021</fechalanzamiento>
+                <arcade>Lost in Random
+                    <fechalanzamiento>10/09/2021</fechalanzamiento>
                     <exito>
                         <ventas>
                             <num>sin datos</num>
-                            <mes>-</mes>
-                            <año>-</año>
-                        </ventas>
-                    </exito>
-                </rol>
-                <arcade>
-                    <fechalanzamiento></fechalanzamiento>
-                    <exito>
-                        <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
-                        </ventas>
-                    </exito>
-                </arcade>
-            </juegos>
-        </version>
-    </plataforma>
-    <plataforma>PC
-        <version>-
-            <juegos>
-                <accion>
-                    <fechalanzamiento></fechalanzamiento>
-                    <exito>
-                        <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
-                        </ventas>
-                    </exito>
-                </accion>
-                <rol>Deltarune
-                    <fechalanzamiento>31/10/2018</fechalanzamiento>
-                    <exito>
-                        <ventas>
-                            <num>sin datos</num>
-                            <mes>-</mes>
-                            <año>-</año>
-                        </ventas>
-                    </exito>
-                </rol>
-                <arcade>
-                    <fechalanzamiento></fechalanzamiento>
-                    <exito>
-                        <ventas>
-                            <num></num>
-                            <mes></mes>
-                            <año></año>
+                            <mes>sin datos</mes>
+                            <año>sin datos</año>
                         </ventas>
                     </exito>
                 </arcade>
