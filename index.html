@@ -8,14 +8,38 @@
 
 <style>
     h1 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: cadetblue;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        text-align: center;
-        border-radius: 10px;
-    }
+        font: 700 4em/1 "Segoe UI",Tahoma,"Geneva","Verdana";
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
 
+    /* Clip Background Image */
+
+	background: url(img/fondotexto.png) repeat-y;
+	-webkit-background-clip: text;
+	background-clip: text;
+
+    /* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 10s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+
+    }
+    
+    /* Animate Background Image */
+
+    @-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+    }
+    
     body {
         text-align: center;
         justify-content: center;
@@ -49,7 +73,7 @@
         word-spacing: 10px;
         text-decoration: none;
         text-align: center;
-        color: goldenrod;
+        color: rgb(241,196,15);
         background-color: cadetblue;
         border-radius: 15px;
         transition-duration: 250ms;
@@ -72,6 +96,7 @@
         justify-self: center;
         font-weight: normal;
         font-size: 15pt;
+        float: center;
     }
 
     footer {
