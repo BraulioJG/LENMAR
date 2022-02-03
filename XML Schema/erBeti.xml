@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<note xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+<erBeti xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="XSD Beti.xsd">
 
 <futbol>
