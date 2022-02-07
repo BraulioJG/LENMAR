@@ -6,7 +6,7 @@
             <xs:sequence>
                 <xs:element name="telefono">
                     <xs:simpleType>
-                        <xs:restriction base="xs:string">
+                        <xs:restriction base="xs:integer">
                             <xs:pattern value="[+][0-9]{11}" />
                         </xs:restriction>
                     </xs:simpleType>
@@ -14,7 +14,41 @@
                 <xs:element name="password">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
-                            <xs:pattern value="[a-zA-Z0-9]{8}" />
+                            <xs:minLength value="5" />
+                            <xs:maxLength value="8" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="dni">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[0-9]{8}[A-Z]" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="coincidencia">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="tontería" />
+                            <xs:enumeration value="maldito" />
+                            <xs:enumeration value="caray" />
+                            <xs:enumeration value="caramba" />
+                            <xs:enumeration value="madre mía" />
+                            <xs:enumeration value="ostras" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="viagra">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="viagra|vi@gra|v1agra|v1@gra|v!@gr@" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="correo">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[a-z0-9]*[@][a-z]*[.][a-z]*" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
