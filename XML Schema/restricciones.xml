@@ -4,14 +4,10 @@
 xsi:noNamespaceSchemaLocation="restricciones.xsd">
 
 <!--Primer ejercicio. Número de teléfono.-->
-    <ejercicio1>
-        <telefono>+34978674235</telefono>
-    </ejercicio1>
+    <telefono>+34564565456</telefono>
 
 <!--Segundo ejercicio. Patrón para poner un password entre 5 y 8 caracteres con mayúsculas, minúsculas y números-->
-    <ejercicio2>
-        <password>Prueba_2</password>
-    </ejercicio2>
+    <password>Basada_1</password>
 
 
 <!--Tercer ejercicio. Patrón para el DNI 30101010A-->

@@ -3,35 +3,23 @@
 
     <xs:element name="restricciones">
         <xs:complexType>
-            <xs:all>
-                <xs:element name="ejercicio1">
-                    <xs:complexType>
-                        <xs:all>
-                            <xs:element name="telefono" type="xs:string">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="+[0-9]{11}" />
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                        </xs:all>
-                    </xs:complexType>
+            <xs:sequence>
+                <xs:element name="telefono">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[+][0-9]{11}" />
+                        </xs:restriction>
+                    </xs:simpleType>
                 </xs:element>
-                <xs:element name="ejercicio2">
-                    <xs:complexType>
-                        <xs:all>
-                            <xs:element name="password" type="xs:string">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="[a-zA-Z0-9]{5-8}" />
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                        </xs:all>
-                    </xs:complexType>
+                <xs:element name="password">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[a-zA-Z0-9]{8}" />
+                        </xs:restriction>
+                    </xs:simpleType>
                 </xs:element>
-            </xs:all>
+            </xs:sequence>
         </xs:complexType>
-    </xs:element>
-
+</xs:element>
+    
 </xs:schema>
