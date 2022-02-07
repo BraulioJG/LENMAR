@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<erBeti xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="XSD Beti.xsd">
+<XSD_Beti xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="XSD_Beti.xsd">
 
 <futbol>
     <equipos>
@@ -37,3 +37,5 @@ xsi:noNamespaceSchemaLocation="XSD Beti.xsd">
         </equipo>
     </equipos>
 </futbol>
+
+</XSD_Beti>

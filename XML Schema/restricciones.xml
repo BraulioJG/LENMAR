@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<restricciones xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="restricciones.xsd">
+
+<!--Primer ejercicio. Número de teléfono.-->
+    <ejercicio1>
+        <telefono>+34978674235</telefono>
+    </ejercicio1>
+
+<!--Segundo ejercicio. Patrón para poner un password entre 5 y 8 caracteres con mayúsculas, minúsculas y números-->
+    <ejercicio2>
+        <password>Prueba_2</password>
+    </ejercicio2>
+
+
+<!--Tercer ejercicio. Patrón para el DNI 30101010A-->
+
+<!--Cuarto ejercicio. Patron para coincidencia con cualquier palabra o frase de la lista siguiente:
+tontería
+maldito
+caray
+caramba
+madre mía
+ostras
+-->
+
+<!--Quinto ejercicio. Patron para coincidencia con la palabra "viagra" y con algunas de las alteraciones que utilizan los emisores de spam, por ejemplo:
+vi@gra
+v1agra
+v1@gra
+v!@gr@
+-->
+
+<!--Sexto ejercicio. Patrón para correo electrónico, por ejemplo: pepe87@gmail.com-->
+
+</restricciones>
