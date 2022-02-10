@@ -53,6 +53,32 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
+                <xs:element name="sexo">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="mujer" default="f">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="f" />
+                                        <xs:enumeration value="F" />
+                                        <xs:enumeration value="Mujer" />
+                                        <xs:enumeration value="M" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="hombre" default="m">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="m" />
+                                        <xs:enumeration value="M" />
+                                        <xs:enumeration value="Hombre" />
+                                        <xs:enumeration value="H" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
             </xs:all>
         </xs:complexType>
     </xs:element>

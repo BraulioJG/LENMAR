@@ -36,4 +36,14 @@ v!@gr@
 
     <correo>pepe87@gmail.com</correo>
 
+
+<!--Ejercicio complexType con restricciones
+mujer: f, F, Mujer, M
+hombre: m, M, Hombre, H-->
+
+    <sexo>
+        <mujer>Mujer</mujer>
+        <hombre>Hombre</hombre>
+    </sexo>
+
 </restricciones>
