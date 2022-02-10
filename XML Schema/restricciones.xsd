@@ -3,7 +3,7 @@
 
     <xs:element name="restricciones">
         <xs:complexType>
-            <xs:sequence>
+            <xs:all>
                 <xs:element name="telefono">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
@@ -53,7 +53,7 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
-            </xs:sequence>
+            </xs:all>
         </xs:complexType>
     </xs:element>
     
