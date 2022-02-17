@@ -20,7 +20,7 @@
             <xs:element name="ConjuntoComplejos">
                 <xs:complexType>
                     <xs:all>
-            <!--Elemento complejo SIN atributos-->
+                        <!--Elemento complejo SIN atributos-->
                         <xs:element name="Elemento1">
                             <xs:complexType>
                                 <xs:sequence>
@@ -29,7 +29,7 @@
                                 </xs:sequence>
                             </xs:complexType>
                         </xs:element>
-            <!--Elemento complejo CON atributos-->
+                        <!--Elemento complejo CON atributos-->
                         <xs:element name="Elemento2">
                             <xs:complexType>
                                 <xs:sequence>
@@ -39,7 +39,7 @@
                                 <xs:attribute name="id" type="xs:integer" />
                             </xs:complexType>
                         </xs:element>
-            <!--Elemento complejo SIN atributos con tipo definido-->
+                        <!--Elemento complejo SIN atributos con tipo definido-->
                         <xs:element name="Elemento3">
                             <xs:complexType>
                                 <xs:sequence>
@@ -48,7 +48,7 @@
                                 </xs:sequence>
                             </xs:complexType>
                         </xs:element>
-            <!--Elemento complejo CON atributos con tipo definido-->
+                        <!--Elemento complejo CON atributos con tipo definido-->
                         <xs:element name="Elemento4">
                             <xs:complexType>
                                 <xs:sequence>
@@ -60,7 +60,99 @@
                     </xs:all>
                 </xs:complexType>
             </xs:element>
-            
+
+            <!-- Restricciones -->
+            <xs:element name="Restricciones">
+                <!-- Expresiones regulares -->
+                <xs:complexType>
+                    <xs:all>
+                        <!-- 1. Numérica -->
+                        <xs:element name="Numérica">
+                            <xs:simpleType>
+                                    <restriction base="xs:integer">
+                                        <xs:minInclusive value="1" />
+                                        <xs:maxInclusive value="10" />
+                                    </restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- 2. De cadena -->
+                        <xs:element name="De_cadena">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="([0-9]{8}[A-Z])" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- 3. Mixtas -->
+                        <xs:element name="Mixtas">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z]*" />
+                                    <xs:minLength value="10" />
+                                    <xs:maxLength value="20" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- 4. All/Choice/Sequence -->
+                        <xs:element name="All-Choice-Sequence">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="All">
+                                        <xs:complexType>
+                                            <xs:all>
+                                                <xs:element name="Jaime" />
+                                                <xs:element name="Adrián" />
+                                                <xs:element name="Daniel" />
+                                                <xs:element name="Braulio" />
+                                            </xs:all>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="Choice">
+                                        <xs:complexType>
+                                            <xs:choice>
+                                                <xs:element name="Abduscan" />
+                                                <xs:element name="Nashe" />
+                                                <xs:element name="Amoajugah" />
+                                                <xs:element name="Callaito" />
+                                            </xs:choice>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="Sequence">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="Samuel" />
+                                                <xs:element name="de_Luque" />
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                        <!-- max-minOccurs -->
+                        <xs:element name="max-minOccurs">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="minOccurs">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="Etesech" minOccurs="1" maxOccurs="unbounded" />
+                                            </xs:sequence>  
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="maxOccurs">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="Rempalago" minOccurs="4" maxOccurs="8" />
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                        <!-- Grupos de elementos para reutilizar -->
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 </xs:element>
