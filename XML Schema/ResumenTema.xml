@@ -20,6 +20,10 @@ xs:noNamespaceSchemaLocation="ResumenTema.xsd">
         <subElemento1></subElemento1>
         <subElemento2></subElemento2>
     </Elemento3>
+    <Elemento4>
+        <subElemento1></subElemento1>
+        <subElemento2></subElemento2>
+    </Elemento4>
 </ConjuntoComplejos>
 
 

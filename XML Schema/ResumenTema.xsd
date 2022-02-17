@@ -49,7 +49,7 @@
                             </xs:complexType>
                         </xs:element>
             <!--Elemento complejo CON atributos con tipo definido-->
-                        <xs:element name="Elemento3">
+                        <xs:element name="Elemento4">
                             <xs:complexType>
                                 <xs:sequence>
                                     <xs:element name="subElemento1" type="xs:string" />
@@ -60,9 +60,11 @@
                     </xs:all>
                 </xs:complexType>
             </xs:element>
+            
         </xs:sequence>
     </xs:complexType>
 </xs:element>
+
 
 <!--Definición de tipos-->
 
