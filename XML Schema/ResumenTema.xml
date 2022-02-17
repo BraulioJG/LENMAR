@@ -25,6 +25,38 @@ xs:noNamespaceSchemaLocation="ResumenTema.xsd">
         <subElemento2></subElemento2>
     </Elemento4>
 </ConjuntoComplejos>
+<Restricciones>
+    <Numérica>10</Numérica>
+    <De_cadena>12372582T</De_cadena>
+    <Mixtas>ASkiqkajJaFgewr</Mixtas>
+    <All-Choice-Sequence>
+        <All>
+            <Jaime />
+            <Adrián />
+            <Daniel />
+            <Braulio />
+        </All>
+        <Choice>
+            <Callaito />
+        </Choice>
+        <Sequence>
+            <Samuel />
+            <de_Luque />
+        </Sequence>
+    </All-Choice-Sequence>
+    <max-minOccurs>
+        <minOccurs>
+            <Etesech />
+            <Etesech />
+            <Etesech />
+            <Etesech />
+        </minOccurs>
+        <maxOccurs>
+            <Rempalago />
+            <Rempalago />
+        </maxOccurs>
+    </max-minOccurs>
+</Restricciones>
 
 
 </resumenes>
