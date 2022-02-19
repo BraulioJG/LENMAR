@@ -4,7 +4,7 @@ xs:noNamespaceSchemaLocation="ResumenTema.xsd">
 
 <ConjuntoSimples>
     <SinAtributo>prueba</SinAtributo>
-    <SinAtributoTipoSimple>20/08/2022</SinAtributoTipoSimple>
+    <SinAtributoTipoSimple>08/02/2022</SinAtributoTipoSimple>
     <SinAtributoTipoDefinido>Córdoba</SinAtributoTipoDefinido>
 </ConjuntoSimples>
 <ConjuntoComplejos>

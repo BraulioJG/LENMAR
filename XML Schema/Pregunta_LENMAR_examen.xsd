@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!--Crea restricciones para los siguientes elementos-->
+    <xs:element name="restricciones">
+        <xs:complexType>
+            <xs:all>
+<!--1. Número de teléfono-->
+                <xs:element name="telefono">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:pattern value="([0-9]{9})" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+<!--2. DNI-->
+                <xs:element name="DNI">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="([0-9]{8}[A-Z])" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+<!--3. Dirección-->
+                <xs:element name="direccion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="calle">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:whiteSpace value="collapse" />
+                                        <xs:pattern value="(C/){1}([A-Za-z]+)" />
+                                        <xs:maxLength value="30" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="numero">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:whiteSpace value="collapse" />
+                                        <xs:pattern value="(Nº){1}([0-9]*)" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="piso">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:whiteSpace value="collapse" />
+                                        <xs:pattern value="(Piso){1}([0-9]*)" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="poblacion">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:whiteSpace value="collapse" />
+                                        <xs:pattern value="([A-Za-z]*)" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="provincia">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:whiteSpace value="collapse" />
+                                        <xs:pattern value="([A-Za-z]*)" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

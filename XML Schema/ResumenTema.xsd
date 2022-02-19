@@ -69,10 +69,10 @@
                         <!-- 1. Numérica -->
                         <xs:element name="Numérica">
                             <xs:simpleType>
-                                    <restriction base="xs:integer">
-                                        <xs:minInclusive value="1" />
-                                        <xs:maxInclusive value="10" />
-                                    </restriction>
+                                <restriction base="xs:integer">
+                                    <xs:minInclusive value="1" />
+                                    <xs:maxInclusive value="10" />
+                                </restriction>
                             </xs:simpleType>
                         </xs:element>
                         <!-- 2. De cadena -->

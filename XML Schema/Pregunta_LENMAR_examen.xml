@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<restricciones xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="Pregunta_LENMAR_examen.xsd">
+
+<!--Crea restricciones para los siguientes elementos-->
+<!--1. Número de teléfono-->
+    <telefono>391123122</telefono>
+
+<!--2. DNI-->
+    <DNI>89122342A</DNI>
+
+<!--3. Dirección-->
+    <direccion>
+        <calle>C/IsaacAlbeniz</calle>
+        <numero>Nº40</numero>
+        <piso>Piso1</piso>
+        <poblacion>Ecija</poblacion>
+        <provincia>Sevilla</provincia>
+    </direccion>
+
+</restricciones>
