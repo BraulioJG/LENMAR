@@ -9,8 +9,10 @@
                 <xs:complexType>
                     <!--Vamos a definir elementos simples-->
                     <xs:all>
-                        <xs:element name="SinAtributo" />
-                        <xs:element name="SinAtributoTipoSimple" type="xs:date" />
+                        <xs:element name="SinAtributo" type="xs:string" />
+                        <xs:element name="integer" type="xs:integer" />
+                        <xs:element name="string" type="xs:string" />
+                        <xs:element name="date" type="xs:date" />
                         <xs:element name="SinAtributoTipoDefinido" type="ciudad" />
                     </xs:all>
                 </xs:complexType>
@@ -43,7 +45,7 @@
                         <xs:element name="Elemento3">
                             <xs:complexType>
                                 <xs:sequence>
-                                    <xs:element name="subElemento1" type="xs:string" />
+                                    <xs:element name="subElemento1" type="subElemento1" />
                                     <xs:element name="subElemento2" type="xs:integer" />
                                 </xs:sequence>
                             </xs:complexType>
@@ -55,6 +57,7 @@
                                     <xs:element name="subElemento1" type="xs:string" />
                                     <xs:element name="subElemento2" type="xs:integer" />
                                 </xs:sequence>
+                                <xs:attribute name="id" type="xs:integer" />
                             </xs:complexType>
                         </xs:element>
                     </xs:all>
@@ -150,6 +153,16 @@
                             </xs:complexType>
                         </xs:element>
                         <!-- Grupos de elementos para reutilizar -->
+                        <xs:element name="alumno">
+                            <xs:complexType>
+                                <xs:group ref="persona" />
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="profesor">
+                            <xs:complexType>
+                                <xs:group ref="persona" />
+                            </xs:complexType>
+                        </xs:element>
                     </xs:all>
                 </xs:complexType>
             </xs:element>
@@ -171,7 +184,7 @@
     </xs:simpleType>
 
     <!--Tipo "Direccion" -->
-    <xs:complexType name="direccion">
+    <xs:complexType name="SubElemento1">
         <xs:sequence>
             <xs:element name="localidad" type="xs:string" />
             <xs:element name="CP" type="xs:integer" />
@@ -179,5 +192,14 @@
             <xs:element name="ciudad2" type="ciudad" />
         </xs:sequence>
     </xs:complexType>
+
+    <!--Definición de grupos-->
+    <xs:group name="persona">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="apellidos" type="xs:string" />
+            <xs:element name="direccion" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
 
 </xs:schema>
