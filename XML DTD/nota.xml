@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "note.dtd">
+
+<note>
+    <to>Braulio</to>
+    <from>                                                                                                                                                                      
+        <email>a@jagger.com</email>
+        <nombre>Adrián</nombre>
+    </from>
+    <heading>Pues... no sé</heading>
+    <body>
+        <mensaje>Wenas</mensaje>
+        <fecha>
+            <dia>03</dia>
+            <mes>Marzo</mes>
+            <anno>2022</anno>
+        </fecha>
+    </body>
+</note>
