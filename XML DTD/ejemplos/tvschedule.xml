@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE TVSCHEDULE SYSTEM "tvschedule.dtd">
+<TVSCHEDULE NAME="Programación">
+    <CHANNEL CHAN="Antena 3">
+        <BANNER>Antena 3</BANNER>
+        <DAY>
+            <DATE>02/04/2022</DATE>
+            <PROGRAMSLOT VTR="21%">
+                <TIME>16:00</TIME>
+                <TITLE RATING="7,5/10" LANGUAGE="Spanish">Las maravillosas aventuras de tu padre</TITLE>
+                <DESCRIPTION>Una película a la que le sobra descripción</DESCRIPTION>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT>
+                <TIME>22:00</TIME>
+                <TITLE>Pochoclo 2: Más mantequilla</TITLE>
+            </PROGRAMSLOT>
+        </DAY>
+        <DAY>
+            <DATE>03/04/2022</DATE>
+            <PROGRAMSLOT VTR="4,3%">
+                <TIME>16:00</TIME>
+                <TITLE RATING="20/10">Adrián Nadador</TITLE>
+                <DESCRIPTION>Una historia de anti-superación</DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+    </CHANNEL>
+    <CHANNEL CHAN="Canal Sur">
+        <BANNER>Canal Sur</BANNER>
+        <DAY>
+            <DATE>02/04/2022</DATE>
+            <PROGRAMSLOT VTR="10,5%">
+                <TIME>16:00</TIME>
+                <TITLE LANGUAGE="Spanish">La Tarde Aquí y Ahora</TITLE>
+                <DESCRIPTION>Hoy viene el Limones, directo desde la legión</DESCRIPTION>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT>
+                <TIME>22:00</TIME>
+                <TITLE>Película genérica de 1980: La secuela</TITLE>
+            </PROGRAMSLOT>
+        </DAY>
+    </CHANNEL>
+</TVSCHEDULE>

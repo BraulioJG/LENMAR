@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE NEWSPAPER SYSTEM "newspaper.dtd">
+<NEWSPAPER>
+    <ARTICLE AUTHOR="Ricardo Stallman" EDITOR="Linus Torvalds" DATE="07/03/2022" EDITION="1">
+        <HEADLINE>Nueva versión de Ubuntu</HEADLINE>
+        <BYLINE>La nueva versión de Ubuntu de la que no deberías haber oído</BYLINE>
+        <LEAD>Nuevo año, nueva versión de Ubuntu que te dejará indiferente</LEAD>
+        <BODY>Ahora, la versión 22.04 existe. No la hemos probado de todas formas, así que no esperes encontrar información al respecto.</BODY>
+        <NOTES>Wenas</NOTES>
+    </ARTICLE>
+    <ARTICLE AUTHOR="Microsoft Corporation" EDITOR="Microsoft Corporation" DATE="07/03/2022">
+        <HEADLINE>Novedades de Windows 11</HEADLINE>
+        <BYLINE>La nueva versión de Windows 11 está disponible para los Insiders</BYLINE>
+        <LEAD>Esta nueva versión incluye mejoras de rendimiento y la esperada compatibilidad con aplicaciones de android</LEAD>
+        <BODY>Hemos presenciado la revolución de la tecnología, y Windows 11 no se está quedando atrás</BODY>
+        <NOTES>Adiows</NOTES>
+    </ARTICLE>
+    <NEWSPAPER>
+        &NEWSPAPER;
+        &PUBLISHER;
+        &COPYRIGHT;
+    </NEWSPAPER>
+</NEWSPAPER>
