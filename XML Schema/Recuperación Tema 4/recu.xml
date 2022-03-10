@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vuelos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="recu.xsd">
+
+    <cod></cod>
+    <diario></diario>
+    <origen></origen>
+    <destino></destino>
+    <hora>
+        <salida></salida>
+        <llegada></llegada>
+    </hora>
+    <estado></estado>
+
+</vuelos>
