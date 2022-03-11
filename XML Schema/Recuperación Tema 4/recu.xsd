@@ -2,4 +2,43 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <xs:element name="vuelos">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="origen" type="origen" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="codigo" type="xs:string" use="required" />
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="[A-Z]{3}" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                    <xs:attribute name="estado" type="xs:string" default="E" />
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="E|R|C" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                </xs:complexType>
+                <xs:unique name="unique-codigo">
+                    <xs:selector xpath="origen" />
+                    <xs:field xpath="codigo" />
+                </xs:unique>
+                    <xs:sequence>
+                        <xs:element name="diario" minOccurs="0" maxOccurs="1" />
+                        <xs:element name="destino" type="xs:string" minOccurs="1" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="fecha" type="xs:date" />
+        </xs:sequence>
+    </xs:complexType>
 </xs:element>
+
+<!--Definición de tipos-->
+<xs:simpleType name="origen">
+    <xs:restriction>
+        <xs:pattern value="[A-Z]{3}" />
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

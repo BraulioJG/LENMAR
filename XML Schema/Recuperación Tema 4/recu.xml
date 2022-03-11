@@ -3,14 +3,96 @@
 <vuelos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="recu.xsd">
 
-    <cod></cod>
-    <diario></diario>
-    <origen></origen>
-    <destino></destino>
-    <hora>
-        <salida></salida>
-        <llegada></llegada>
-    </hora>
-    <estado></estado>
+        <origen>SEV</origen>
+            <v1>
+                <cod>DLH</cod>
+                <destino>Munich</destino>
+                <hora>
+                    <salida>15:45</salida>
+                    <embarque>15:41</embarque>
+                </hora>
+                <puertaembarque>D68</puertaembarque>
+                <estado>R</estado>
+                <observaciones>ESTIMA. 16:11h</observaciones>
+            </v1>
+            <v2>
+                <cod>IBE</cod>
+                <diario />
+                <destino>Barcelona</destino>
+                <hora>
+                    <salida>15:50</salida>
+                    <embarque>15:40</embarque>
+                </hora>
+                <puertaembarque>D65</puertaembarque>
+                <estado>E</estado>
+                <observaciones>EMBARQUE</observaciones>
+            </v2>
+            <v3>
+                <cod>IBE</cod>
+                <diario />
+                <destino>Bilbao</destino>
+                <hora>
+                    <salida>12:50</salida>
+                    <embarque>15:40</embarque>
+                </hora>
+                <puertaembarque>D44</puertaembarque>
+                <estado>E</estado>
+                <observaciones>EMBARQUE</observaciones>
+            </v3>
+            <v4>
+                <cod>VLG</cod>
+                <diario />
+                <destino>Madrid</destino>
+                <hora>
+                    <salida>15:35</salida>
+                    <embarque>15:25</embarque>
+                </hora>
+                <puertaembarque>B18</puertaembarque>
+                <estado>R</estado>
+                <observaciones>IR A PTA</observaciones>
+            </v4>
 
+        <origen>MAD</origen>
+            <v1>
+                <cod>AEA</cod>
+                <destino>Málaga</destino>
+                <hora>
+                    <salida>16:15</salida>
+                    <embarque></embarque>
+                </hora>
+                <puertaembarque>D61</puertaembarque>
+                <estado>C</estado>
+                <observaciones></observaciones>
+            </v1>
+            <v2>
+                <cod>VLG</cod>
+                <destino>Emiratos</destino>
+                <hora>
+                    <salida>16:40</salida>
+                    <embarque>16:00</embarque>
+                </hora>
+                <puertaembarque>C33</puertaembarque>
+                <estado>E</estado>
+                <observaciones>ENLACE D46 Procedente de Madrid</observaciones>
+            </v2>
+
+        <origen>MAL</origen>
+            <v1>
+                <cod>DBA</cod>
+                <destino>Melilla</destino>
+                <hora>
+                    <salida>15:30</salida>
+                    <embarque>15:25</embarque>
+                </hora>
+                <puertaembarque>B15</puertaembarque>
+                <estado>E</estado>
+                <observaciones>EMB. CERRADO</observaciones>  
+            </v1>
+        
+        <fecha>
+            <dia>11</dia>
+            <mes>03</mes>
+            <año>2022</año>
+        </fecha>
+            
 </vuelos>
