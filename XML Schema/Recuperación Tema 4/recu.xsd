@@ -4,40 +4,73 @@
 <xs:element name="vuelos">
     <xs:complexType>
         <xs:sequence>
-            <xs:element name="origen" type="origen" maxOccurs="unbounded">
+            <xs:element name="origen" maxOccurs="unbounded">
                 <xs:complexType>
-                    <xs:attribute name="codigo" type="xs:string" use="required" />
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string">
-                                <xs:pattern value="[A-Z]{3}" />
-                            </xs:restriction>
-                        </xs:simpleType>
-                    <xs:attribute name="estado" type="xs:string" default="E" />
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string">
-                                <xs:pattern value="E|R|C" />
-                            </xs:restriction>
-                        </xs:simpleType>
-                </xs:complexType>
-                <xs:unique name="unique-codigo">
-                    <xs:selector xpath="origen" />
-                    <xs:field xpath="codigo" />
-                </xs:unique>
                     <xs:sequence>
-                        <xs:element name="diario" minOccurs="0" maxOccurs="1" />
-                        <xs:element name="destino" type="xs:string" minOccurs="1" />
+                        <xs:element name="vuelo" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="diario" minOccurs="0" maxOccurs="1" />
+                                    <xs:element name="destino" type="destino" />
+                                    <xs:element name="hora">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="salida" type="hora" minOccurs="0" maxOccurs="1" />
+                                                <xs:element name="embarque" type="hora" minOccurs="0" maxOccurs="1" />
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="puertaembarque" type="puertaembarque" minOccurs="0" maxOccurs="1" />
+                                    <xs:element name="observaciones" type="observaciones" minOccurs="0" maxOccurs="1" />
+                                </xs:sequence>
+                                <xs:attribute name="codigo" type="codigo" use="required" />
+                                <xs:attribute name="estado" type="estado" default="E" use="optional" />
+                            </xs:complexType>
+                        </xs:element>
                     </xs:sequence>
+                    <xs:attribute name="codigoorigen" type="origen"></xs:attribute>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="fecha" type="xs:date" />
+            <xs:element name="fechapanel" type="xs:date" maxOccurs="1" />
         </xs:sequence>
     </xs:complexType>
 </xs:element>
 
 <!--Definición de tipos-->
 <xs:simpleType name="origen">
-    <xs:restriction>
+    <xs:restriction base="xs:ID">
         <xs:pattern value="[A-Z]{3}" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="destino">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Z][a-z]*" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="hora">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{2}:[0-9]{2}" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="puertaembarque">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Z][0-9]{2}" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="observaciones">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="0" />
+        <xs:maxLength value="50" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="codigo">
+    <xs:restriction base="xs:ID">
+        <xs:pattern value="[A-Z]{3}[0-9]{4}" />
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="estado">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="E|R|C" />
     </xs:restriction>
 </xs:simpleType>
 
