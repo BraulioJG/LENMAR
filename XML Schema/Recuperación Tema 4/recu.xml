@@ -4,6 +4,7 @@
 xsi:noNamespaceSchemaLocation="recu.xsd">
 
     <origen codigoorigen="SEV">
+<!--He modificado el código del vuelo para que sea unívoco, ya que si cogemos solo las letras se repiten-->
         <vuelo codigo="DLH1835" estado="R">
             <destino>Munich</destino>
             <hora>
