@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE medicamentos SYSTEM "medicamentos.dtd">
+
+<medicamentos>
+    <medicamento>
+        <nombre id="ID1">
+            <generico>Paracetamol (acetaminofeno)</generico>
+            <comercial>Gelocatil 650 MG Solución Oral 12 Sobres</comercial>
+            <comercial>Apiretal 100 MG/ML Solución Oral 90 ML</comercial>
+        </nombre>
+        <administracion tipo="oral">8h</administracion>
+        <dosis>650mg, 100mg</dosis>
+    </medicamento>
+    <medicamento>
+        <nombre id="ID2">
+            <generico>Ibuprofeno</generico>
+            <comercial>Ibudol 400 MG Suspensión Oral 20 Sobres</comercial>
+        </nombre>
+        <administracion tipo="oral">8h</administracion>
+        <dosis>400mg</dosis>
+    </medicamento>
+    <medicamento>
+        <nombre id="ID3">
+            <generico>Epinefrina (adrenalina)</generico>
+            <comercial>Adrenalin</comercial>
+        </nombre>
+        <administracion tipo="intramuscular">8h</administracion>
+        <dosis>400mg</dosis>
+    </medicamento>
+</medicamentos>

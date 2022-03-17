@@ -1,0 +1,10 @@
+<!ELEMENT medicamentos (medicamento+)>
+<!ELEMENT medicamento (nombre, administracion, dosis)>
+    <!ELEMENT nombre (generico, comercial+)>
+        <!ELEMENT generico (#PCDATA)>
+        <!ELEMENT comercial (#PCDATA)*>
+    <!ELEMENT administracion (#PCDATA)>
+    <!ELEMENT dosis (#PCDATA)>
+
+<!ATTLIST nombre id ID #REQUIRED>
+<!ATTLIST administracion tipo (intramuscular|oral) #REQUIRED>
