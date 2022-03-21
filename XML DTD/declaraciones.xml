@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE declaraciones [
-<!ELEMENT declaraciones (consonante, tipo_de_dato, variable)>
-   <!ELEMENT consonante (#PCDATA)>
-   <!ELEMENT tipo_de_dato (#PCDATA)>
-   <!ELEMENT variable (#PCDATA)>
+   <!ELEMENT declaraciones (consonante, tipo_de_dato*, variable+)>
+      <!ELEMENT consonante (#PCDATA)>
+      <!ELEMENT tipo_de_dato (#PCDATA)>
+      <!ELEMENT variable (#PCDATA)>
 
-   <!ATTLIST consonante valor CDATA #REQUIRED> <!--En los atributos no hace falta poner paréntesis en el tipo de contenido-->
-   <!ATTLIST variable tipo CDATA #REQUIRED>
+   <!ATTLIST consonante valor CDATA #REQUIRED>
+   <!ATTLIST variable tipo CDATA #IMPLIED>
 ]>
 
 <declaraciones>
    <consonante valor="3.141592">PI</consonante>
-   <tipo_de_dato>khe</tipo_de_dato>
    <variable tipo="real">radio</variable>
+   <variable>area</variable>
+   <variable>longitud</variable>
 </declaraciones>

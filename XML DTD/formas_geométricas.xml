@@ -32,5 +32,12 @@
          <color>verde</color>
          <tipo>3D</tipo>
       </caracteristicas>
-</forma_geometrica>
+   </forma_geometrica>
+   <forma_geometrica>
+      <otra lados="12" />
+      <caracteristicas>
+         <color>beige</color>
+         <tipo>plana</tipo>
+      </caracteristicas>
+   </forma_geometrica>
 </forma>
