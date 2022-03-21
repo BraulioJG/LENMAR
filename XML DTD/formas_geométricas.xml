@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE forma [
+   <!ELEMENT forma (forma_geometrica)+>
+      <!ELEMENT forma_geometrica ((cuadrado|rombo|circulo|triangulo|otra), caracteristicas)>
+         <!ELEMENT cuadrado (#PCDATA)>
+         <!ELEMENT rombo (#PCDATA)>
+         <!ELEMENT circulo (#PCDATA)>
+         <!ELEMENT triangulo (#PCDATA)>
+         <!ELEMENT otra (#PCDATA)>
+         <!ELEMENT caracteristicas (color, tipo)>
+            <!ELEMENT color (#PCDATA)>
+            <!ELEMENT tipo (#PCDATA)>
+
+   <!ATTLIST cuadrado lados CDATA #IMPLIED> <!--IMPLIED implica que no hay que poner necesariamente atributo-->
+   <!ATTLIST rombo lados CDATA #IMPLIED>
+   <!ATTLIST circulo lados CDATA #IMPLIED>
+   <!ATTLIST triangulo lados CDATA #IMPLIED>
+   <!ATTLIST otra lados CDATA #IMPLIED>
+]>
+
+<forma>
+   <forma_geometrica>
+      <rombo lados="4" />
+      <caracteristicas>
+         <color>naranja</color>
+         <tipo>plana</tipo>
+      </caracteristicas>
+   </forma_geometrica>
+   <forma_geometrica>
+      <triangulo lados="3" />
+      <caracteristicas>
+         <color>verde</color>
+         <tipo>3D</tipo>
+      </caracteristicas>
+</forma_geometrica>
+</forma>
