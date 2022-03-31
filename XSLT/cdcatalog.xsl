@@ -20,7 +20,6 @@
       <td><xsl:value-of select="price"/></td>
     </tr>
     </xsl:if>
-    </xsl:if>
     </xsl:for-each>
   </table>
 </body>
