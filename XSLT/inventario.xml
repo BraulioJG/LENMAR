@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="inventario.xsl"?>
+<inventario>
+    <producto codigo="17238">
+        <peso unidad="kg">10</peso>
+        <nombre>Ordenador</nombre>
+        <lugar edificio="0">
+            <aula>10</aula>
+        </lugar>
+    </producto>
+    <producto codigo="19237">
+        <peso unidad="g">500</peso>
+        <nombre>Switch</nombre>
+        <lugar edificio="A">
+            <aula>6</aula>
+        </lugar>
+    </producto>
+    <producto codigo="13127">
+        <peso unidad="lb">20</peso>
+        <nombre>SAI</nombre>
+        <lugar edificio="B">
+            <aula>2</aula>
+        </lugar>
+    </producto>
+    <producto codigo="11232">
+        <peso unidad="t">1</peso>
+        <nombre>Servidor</nombre>
+        <lugar edificio="1">
+            <aula>2</aula>
+        </lugar>
+    </producto>
+</inventario>
