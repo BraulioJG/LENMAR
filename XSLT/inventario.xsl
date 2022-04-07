@@ -21,7 +21,7 @@
         <br/>
         <hr/>
         <br/>
-        <h1>Inventario en tabla</h1>
+        <h1>Inventario en tablas</h1>
         <xsl:for-each select="inventario/producto">
         <table border="3pt">
             <tr>
