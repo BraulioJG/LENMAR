@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="inventario.xsl"?>
 <inventario>
     <producto codigo="17238">
-        <peso unidad="kg">10</peso>
+        <peso unidad="g">10000</peso>
         <nombre>Ordenador</nombre>
         <lugar edificio="0">
             <aula>10</aula>

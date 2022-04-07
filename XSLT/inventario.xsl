@@ -21,25 +21,26 @@
         <br/>
         <hr/>
         <br/>
-        <h1>Inventario en tablas</h1>
+        <h1>Inventario en tabla</h1>
+        <table border="2">
         <xsl:for-each select="inventario/producto">
-        <table border="3pt">
             <tr>
                 <th colspan="2" bgcolor="yellow">Elemento <xsl:value-of select="./@codigo" /></th>
             </tr>
             <tr>
-                <tl>Peso: <xsl:value-of select="peso" /><xsl:value-of select="./peso/@unidad" /></tl>
+                <td bgcolor="lightyellow">Nombre</td>
+                <td><xsl:value-of select="nombre" /></td>
             </tr>
             <tr>
-                <tl>Nombre: <xsl:value-of select="nombre" /></tl>
+                <td bgcolor="lightyellow">Peso</td>
+                <xsl:if test="peso&gt;=100">
+                <td bgcolor="red"><xsl:value-of select="peso" /><xsl:value-of select="./peso/@unidad" /></td>
+                </xsl:if>
+                <xsl:if test="peso&lt;'400'" />
             </tr>
-            <tr>
-                <tl>Lugar: <xsl:value-of select="lugar" /></tl>
-                | <tl>Aula: <xsl:value-of select="./lugar/aula" /></tl>
-            </tr>
+        </xsl:for-each>
         </table>
         <br/>
-        </xsl:for-each>
     </body>
 </html>
 </xsl:template>
