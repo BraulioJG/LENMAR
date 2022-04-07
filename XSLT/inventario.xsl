@@ -38,6 +38,7 @@
                 | <tl>Aula: <xsl:value-of select="./lugar/aula" /></tl>
             </tr>
         </table>
+        <br/>
         </xsl:for-each>
     </body>
 </html>
