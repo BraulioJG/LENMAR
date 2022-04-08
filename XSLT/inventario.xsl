@@ -36,7 +36,6 @@
                 <xsl:if test="peso&gt;=100">
                 <td bgcolor="red"><xsl:value-of select="peso" /><xsl:value-of select="./peso/@unidad" /></td>
                 </xsl:if>
-                <xsl:if test="peso&lt;'400'" />
             </tr>
         </xsl:for-each>
         </table>
