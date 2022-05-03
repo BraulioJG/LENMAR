@@ -12,7 +12,7 @@
     </tr>
     <xsl:for-each select="catalog/cd"><!--Sirve para seleccionar los elementos, es la ruta del documento xml en la que entramos-->
     <xsl:sort select="artist" /><!--Ordena el contenido por nombre de artista-->
-    <xsl:sort select="price" data-type="number" order="descending"/><!--Ordena el contenido por precio-->
+    <xsl:sort select="price" data-type="number" order="descending"/><!--Ordena el contenido por precio descendente-->
     <!--<xsl:if test="(price &gt; 9) and (price &lt; 10)"> Muestra un contenido si se cumple una condición. &gt; indica >, amp& indica & y &lt; indica <.-->
     <!--<xsl:if test="artist='Bob Dylan'">-->
     <!--<xsl:if test="title/@id=2"> Filtramos por atributos de elementos con @atributo-->
